@@ -180,7 +180,7 @@ redemption_rate = st.sidebar.slider(
 st.sidebar.markdown("**⚙️ Fee Settings**")
 include_performance_fee = st.sidebar.toggle(
     "Include Performance Fee", 
-    value=True,
+    value=False,
     help="Performance fee is % of your extra profit. Turn off to see platform fee only."
 )
 
