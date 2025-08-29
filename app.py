@@ -385,16 +385,15 @@ for cust in [50, 100, 200, 300, 400, 500, 1000, 2000, 3000, 5000]:
 
     projection_data.append({
         "Customers": cust,
-        "Tier": t["name"],
-        "Net Profit (No Loyalty) ₹": round(profit_no_loyalty),
-        "Profit w/ Loyalty (pre-fees) ₹": round(profit_with_before_fees_proj),
-        "Incremental Profit (pre-fee) ₹": round(incr_profit_base_proj),
+        "No Loyalty ₹": round(profit_no_loyalty),
+        "Loyalty (pre-fees) ₹": round(profit_with_before_fees_proj),
+        "Incremental (pre-fee) ₹": round(incr_profit_base_proj),
         "Perf. Fee ₹": round(perf_fee_proj),
         "Total Fee ₹": round(total_fee_proj),
-        "Net Profit (after fees) ₹": round(profit_loyalty_after_fees),
-        "Incremental Profit (after fees) ₹": round(incr_profit_after_fees),
-        "ROI (×)": f"{roi_proj:.1f}×" if total_fee_proj > 0 else "N/A",
-        "Incremental Gain (%)": f"{gain_pct:.1f}%" if profit_no_loyalty > 0 else "N/A",
+        "Net Profit ₹": round(profit_loyalty_after_fees),
+        "Incremental ₹": round(incr_profit_after_fees),
+        "ROI": f"{roi_proj:.1f}×" if total_fee_proj > 0 else "N/A",
+        "Gain %": f"{gain_pct:.1f}%" if profit_no_loyalty > 0 else "N/A",
     })
 
 # Enhanced dataframe display
