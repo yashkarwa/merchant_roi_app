@@ -125,14 +125,14 @@ profit_margin_percent = st.sidebar.number_input(
     "📈 Profit Margin (%)", 
     min_value=0.0, 
     max_value=100.0, 
-    value=10.0,
+    value=20.0,
     help="What percentage of revenue is your profit?"
 )
 
 customers_per_month = st.sidebar.number_input(
     "👥 Customers per Month", 
     min_value=0, 
-    value=50,
+    value=100,
     help="How many unique customers visit your shop monthly?"
 )
 
@@ -148,7 +148,7 @@ orders_before = st.sidebar.number_input(
 orders_after = st.sidebar.number_input(
     "📈 Orders per Customer (With Loyalty)", 
     min_value=0, 
-    value=4,
+    value=3,
     help="How many times do you expect customers to order after starting the loyalty program?"
 )
 
@@ -157,7 +157,7 @@ st.sidebar.markdown("**🎁 Reward Settings**")
 reward_frequency = st.sidebar.number_input(
     " Reward Frequency (Every N visits)", 
     min_value=1, 
-    value=10,
+    value=4,
     help="Give reward after how many visits? (e.g., every 5th visit)"
 )
 
