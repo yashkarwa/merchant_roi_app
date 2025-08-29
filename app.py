@@ -6,9 +6,9 @@ st.set_page_config(page_title="Loyalty Profit Calculator", layout="wide")
 
 # ------------------------ Tier Logic (Auto Platform + Perf. Fee) ------------------------
 TIERS = [
-    {"name": "Starter",    "aov_min": 0,   "aov_max": 100,         "platform_fee": 199,  "perf_fee_pct": 0.02},   # < ₹100
-    {"name": "Growth",     "aov_min": 100, "aov_max": 250,         "platform_fee": 399,  "perf_fee_pct": 0.025},  # ₹100–₹250
-    {"name": "Pro",        "aov_min": 250, "aov_max": 500,         "platform_fee": 699,  "perf_fee_pct": 0.03},   # ₹250–₹500
+    {"name": "Starter",    "aov_min": 0,   "aov_max": 100,         "platform_fee": 999,  "perf_fee_pct": 0.02},   # < ₹100
+    {"name": "Growth",     "aov_min": 100, "aov_max": 250,         "platform_fee": 999,  "perf_fee_pct": 0.025},  # ₹100–₹250
+    {"name": "Pro",        "aov_min": 250, "aov_max": 500,         "platform_fee": 999,  "perf_fee_pct": 0.03},   # ₹250–₹500
     # For ₹500+, choose Elite by default; bump to Enterprise for large scale (>= 3000 cust/mo).
     {"name": "Elite",      "aov_min": 500, "aov_max": float("inf"),"platform_fee": 999,  "perf_fee_pct": 0.04},
     {"name": "Enterprise", "aov_min": 500, "aov_max": float("inf"),"platform_fee": 1499, "perf_fee_pct": 0.04},
